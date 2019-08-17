@@ -15,6 +15,7 @@ INC             = -I./include
 #$(TARGET) :
 #		$(CXX) -c $(SRCS) $(INC) $(LIB_DIRS) $(LIBS)
 
+
 all : $(TARGET)
 		$(CXX) -o $(TARGET) $(OBJPATH)/$(OBJS)
 
