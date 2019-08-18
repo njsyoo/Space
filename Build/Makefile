@@ -25,4 +25,5 @@ $(OBJ_EARTH) : $(SRC_EARTH) $(LIB_EARTH)
 
 clean :
 		rm -f $(TARGET)
-		rm -f $(OBJPATH)/*.o
+		rm -f $(OBJ_PATH_EARTH)/*.o
+		rm -f $(OBJ_PATH_MAIN)/*.o
