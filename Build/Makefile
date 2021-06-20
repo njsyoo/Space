@@ -6,9 +6,11 @@ OBJ_EARTH       = $(notdir $(SRC_EARTH:.cpp=.o))
 OBJ_PATH_EARTH	= ./Obj_Earth
 
 SRC_PATH_MAIN	= ../
-SRC_MAIN		= $(wildcard $(SRC_PATH_MAIN)/*.cpp)
-OBJ_MAIN		= $(notdir $(SRC_MAIN:.cpp=.o))
-OBJ_PATH_MAIN	= ./
+;SRC_MAIN		= $(wildcard $(SRC_PATH_MAIN)/*.cpp)
+SRC_MAIN		= ../main.cpp
+;OBJ_MAIN		= $(notdir $(SRC_MAIN:.cpp=.o))
+OBJ_MAIN		= main.o
+OBJ_PATH_MAIN	= .
 
 OBJS			= $(OBJ_PATH_EARTH)/$(OBJ_EARTH) $(OBJ_PATH_MAIN)/$(OBJ_MAIN)
 
